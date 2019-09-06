@@ -15,4 +15,10 @@ class AppURL: NSObject {
         let url = baseUrl + "api/v1/images/latest"
         return url
     }()
+    
+    static var searchImage: String = {
+        let url = baseUrl + "api/v1/images/search"
+        return url
+    }()
+    
 }

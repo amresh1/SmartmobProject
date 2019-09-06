@@ -30,8 +30,16 @@ class ViewController: UIViewController {
         APIHandler.getTopImages(viewController: self) { (response) in
             self.imagesListDataSource = response?.images
             self.imageListFilterData = response?.images
+            self.listTableView.reloadData()
         }
     }
+    func getSearchData(_ searchItems: String){
+        APIHandler.searchImages(searchItem: searchItems, viewController: self) { (response) in
+            self.imageListFilterData = response?.images
+            self.listTableView.reloadData()
+        }
+    }
+    
     @objc func searchButtonClicked() {
         let searchBar = UISearchBar()
         self.navigationItem.titleView = searchBar
@@ -82,12 +90,17 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
 
 extension ViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        // Do some search stuff
+        getSearchData(searchText)
     }
-    
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         // Stop doing the search stuff
+        getTopTenData()
+        searchBar.text = ""
+        searchBar.showsCancelButton = false
+        searchBar.isHidden = true
+        rightBarButtonVisible()
+        self.title = "Search Items Here eg.Laptop"
         // and clear the text in the search bar
         // You could also change the position, frame etc of the searchBar
     }
