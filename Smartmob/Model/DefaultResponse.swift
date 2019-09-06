@@ -22,6 +22,6 @@ class DefaultResponse: NSObject, NSCoding, Mappable {
   }
   func mapping(map: Map) {
     status <- map["status"]
-    message <- map["error.message"]
+    message <- map["message"]
   }
 }

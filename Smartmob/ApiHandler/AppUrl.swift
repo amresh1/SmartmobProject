@@ -7,3 +7,12 @@
 //
 
 import Foundation
+import Foundation
+class AppURL: NSObject {
+    static let baseUrl = "http://www.splashbase.co/"
+    
+    static var topTenImage: String = {
+        let url = baseUrl + "api/v1/images/latest"
+        return url
+    }()
+}

@@ -1,0 +1,47 @@
+PODS:
+  - Alamofire (4.8.2)
+  - AlamofireImage (3.5.2):
+    - Alamofire (~> 4.8)
+  - AlamofireObjectMapper (5.2.0):
+    - Alamofire (~> 4.7)
+    - ObjectMapper (~> 3.4)
+  - Hero (1.4.0)
+  - ObjectMapper (3.5.1)
+  - SVProgressHUD (2.2.6)
+
+DEPENDENCIES:
+  - Alamofire
+  - AlamofireImage
+  - AlamofireObjectMapper
+  - Hero
+  - ObjectMapper
+  - SVProgressHUD (from `https://github.com/SVProgressHUD/SVProgressHUD.git`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - AlamofireImage
+    - AlamofireObjectMapper
+    - Hero
+    - ObjectMapper
+
+EXTERNAL SOURCES:
+  SVProgressHUD:
+    :git: https://github.com/SVProgressHUD/SVProgressHUD.git
+
+CHECKOUT OPTIONS:
+  SVProgressHUD:
+    :commit: 4fdf3fdc8703fd9915dae33fc1363c604a06b24e
+    :git: https://github.com/SVProgressHUD/SVProgressHUD.git
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  AlamofireImage: 63cfe3baf1370be6c498149687cf6db3e3b00999
+  AlamofireObjectMapper: 92b6ce2423a9d159e686f6a1d514a009bf903ddc
+  Hero: bac92350d7201a1a940003e0767c7b52ce7c99a1
+  ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
+  SVProgressHUD: 6ed134667e9ebb2f33679e8273cd48fd3fa349e5
+
+PODFILE CHECKSUM: 6af9156af25b052bda8c804a08e8b484bb6ac73b
+
+COCOAPODS: 1.7.2
