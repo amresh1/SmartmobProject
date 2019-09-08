@@ -23,6 +23,7 @@
 		E80A1846232250CA001FEC20 /* AppUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80A1845232250CA001FEC20 /* AppUrl.swift */; };
 		E80A1848232251B4001FEC20 /* ApiHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80A1847232251B4001FEC20 /* ApiHandler.swift */; };
 		E80A184A232259F8001FEC20 /* ImageListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80A1849232259F8001FEC20 /* ImageListTableViewCell.swift */; };
+		E89300B02324AA33006818CD /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89300AF2324AA33006818CD /* DetailTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		E80A1845232250CA001FEC20 /* AppUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUrl.swift; sourceTree = "<group>"; };
 		E80A1847232251B4001FEC20 /* ApiHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiHandler.swift; sourceTree = "<group>"; };
 		E80A1849232259F8001FEC20 /* ImageListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageListTableViewCell.swift; sourceTree = "<group>"; };
+		E89300AF2324AA33006818CD /* DetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +167,7 @@
 			children = (
 				E80A180623224D57001FEC20 /* ViewController.swift */,
 				E80A1849232259F8001FEC20 /* ImageListTableViewCell.swift */,
+				E89300AF2324AA33006818CD /* DetailTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -389,6 +392,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E80A184123224ECE001FEC20 /* APIManager.swift in Sources */,
+				E89300B02324AA33006818CD /* DetailTableViewController.swift in Sources */,
 				E80A184A232259F8001FEC20 /* ImageListTableViewCell.swift in Sources */,
 				E80A180723224D57001FEC20 /* ViewController.swift in Sources */,
 				E80A183C23224E16001FEC20 /* Images.swift in Sources */,
