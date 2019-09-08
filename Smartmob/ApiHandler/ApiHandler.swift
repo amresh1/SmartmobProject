@@ -20,7 +20,7 @@ class APIHandler: NSObject {
     }
     
     static func searchImages(searchItem: String,viewController:UIViewController,  completion: @escaping (MainResponse?) -> Void){
-        APIManager.init(urlString: AppURL.searchImage, parameters: ["query" : searchItem], method: .get).handleResponse(showProgressHud: true, showBanner: false, completionHandler: { (responses: MainResponse) in
+        APIManager.init(urlString: AppURL.searchImage, parameters: ["query" : searchItem], method: .get).handleResponse(showProgressHud: false, showBanner: false, completionHandler: { (responses: MainResponse) in
             completion(responses)
         }) {
             print("Error")

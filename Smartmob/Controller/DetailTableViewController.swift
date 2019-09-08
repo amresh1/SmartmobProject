@@ -22,16 +22,14 @@ class DetailTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+//        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+//        self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.isTranslucent = true
         self.navigationController?.view.backgroundColor = .clear
         UpdateView()
         if let url = URL(string: imageUrl ?? "") {
             detailImage.af_setImage(withURL: url)
         }
-    }
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
-        self.navigationController?.navigationBar.barTintColor = UIColor.darkGray
     }
     
     func UpdateView() {
@@ -85,7 +83,7 @@ class DetailTableViewController: UITableViewController {
                 
                 self.navigationController?.navigationBar.tintColor = navigationcolor
                 self.navigationController?.navigationBar.backgroundColor = color
-                UIApplication.shared.statusBarStyle = .lightContent
+                //UIApplication.shared.statusBarStyle = .lightContent
                 
                 self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: navigationcolor]
                 self.navigationController?.navigationBar.barStyle = .default
@@ -97,7 +95,7 @@ class DetailTableViewController: UITableViewController {
                 let color = UIColor.init(red: 1, green: 1, blue: 1, alpha: offset)
                 self.navigationController?.navigationBar.tintColor = UIColor.white
                 self.navigationController?.navigationBar.backgroundColor = color
-                UIApplication.shared.statusBarStyle = .lightContent
+                //UIApplication.shared.statusBarStyle = .lightContent
                 
                 self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
                 self.navigationController?.navigationBar.barStyle = .black

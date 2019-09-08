@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.barTintColor = UIColor.darkGray
+        self.navigationItem.title = "Item"
         getTopTenData()
         rightBarButtonVisible()
         // Do any additional setup after loading the view.
@@ -117,7 +118,6 @@ extension ViewController: UISearchBarDelegate {
         searchBar.isHidden = true
         rightBarButtonVisible()
         self.imageListFilterData = self.imagesListDataSource
-        self.title = "Search Items Here eg.Laptop"
         // and clear the text in the search bar
         // You could also change the position, frame etc of the searchBar
     }
